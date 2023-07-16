@@ -1,3 +1,93 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = 'https://yoquec.com/'
+title        = "Yoquec.com"
+languageCode = "en-us"
+theme        = "hello-friend-ng"
+paginate     = 3
+
+disableRSS     = false
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeTitle = "Welcome to my website 🏠"
+  homeSubtitle = "A simple and beautiful blog"
+
+  # Set disableReadOtherPosts to true in order to hide the links to other posts.
+  disableReadOtherPosts = false
+
+  # Enable sharing buttons, if you like
+  enableSharingButtons = true
+  
+  # Show a global language switcher in the navigation bar
+  enableGlobalLanguageMenu = false
+
+  # Metadata mostly used in document's head
+  description = "My new homepage or blog"
+  keywords = "homepage, blog"
+  images = [""]
+
+  # Background image
+  backgroundImage = "images/background.png"
+
+  # table of contents
+  toc = true
+
+  copyright = "Test"
+
+[author]
+  name = "Alvaro Viejo"
+
+[params.logo]
+  # blinking cursro
+  logoText = "curl yoquec.com"
+  logoHomeLink = "/"
+
+# [params.Portrait]
+  # path = "images/portrait.jpeg"
+  # alt = "This is a test 2"
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+# menu sections
+[[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/projects"
+
+[[menu.main]]
+    identifier = "about"
+    name       = "About me"
+    url        = "/about"
+
+
+[params.footer]
+  powered = true
+  trademark = false
+  rss = true
+  copyright = false
+  author = true
+
+  topText = []
+  bottomText = []
+
+[params.links]
+  github = "https://github.com/yoquec"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/yoquec"
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/alvaroviejoalonso/"
+
+[[params.social]]
+  name = "email"
+  url = "mailto:alvaro.viejo@yoquec.com"
