@@ -2,6 +2,7 @@
 
 const menuTrigger = document.querySelector(".menu-trigger");
 const menu = document.querySelector(".menu");
+const copy_header = document.querySelector(".copy-header")
 const mobileQuery = getComputedStyle(document.body).getPropertyValue(
   "--phoneWidth"
 );
@@ -9,6 +10,7 @@ const isMobile = () => window.matchMedia(mobileQuery).matches;
 const isMobileMenu = () => {
   menuTrigger && menuTrigger.classList.toggle("hidden", !isMobile());
   menu && menu.classList.toggle("hidden", isMobile());
+  copy_header && copy_header.classList.toggle("hidden", isMobile());
 };
 
 isMobileMenu();
